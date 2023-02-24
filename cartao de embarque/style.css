@@ -1,0 +1,165 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root{
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 1.6rem;
+    font-family: 'Rubik',sans-serif;
+    letter-spacing: -0.02em;
+
+    background: linear-gradient(#3A1078,#4E31AA,#2F58CD,#3795BD) no-repeat;
+
+    height: 100vh;
+    display: grid;
+    place-content: center;
+}
+
+.grid{
+    display: grid;
+}
+
+.column{
+    grid-auto-flow: column;
+}
+
+.text-right{
+    text-align: right;
+}
+
+
+h1,
+strong{
+    font-weight: 500;
+}
+
+h1{
+    font-size: 2rem;
+    line-height: 2.4rem;
+    color: white;
+    text-align: center;
+}
+
+p{
+    color: rgba(0,0,0,0.64);
+    font-size: 14px;
+    line-height: 17px;
+}
+
+strong{
+    font-size: 16px;
+    line-height: 19px;
+    color: rgba(0,0,0,0.88);
+ 
+}
+
+section{
+    background-color: #fff;
+    padding: 2.4rem 3.2rem;
+
+    --mask: radial-gradient(1.2rem at 1.2rem, transparent 95%, black) -1.2rem ;
+    -webkit-mask:var(--mask) ;
+    mask: var(--mask);
+}
+
+#boarding-pass{
+    margin: auto;
+}
+
+#ticket{
+margin-top: 2rem;
+box-shadow: 0px 4px 24px rgba(0,0,0,0.25);
+}
+
+
+.top{
+    border-radius: 2.4rem 2.4rem 0 0;
+    gap: 2.4rem;
+}
+
+.departure .arrival{
+    width: 12.5rem;
+}
+
+
+.departure strong, .arrival strong{
+    font-size: 40px;
+    line-height: 47px;
+}
+
+.airplane{
+    align-self: center;
+}
+
+.top time{
+    color: rgba(0,0,0,0.8)
+}
+
+.top time sup{
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 12px;
+}
+
+.middle{
+   border: 1px dashed rgba(0,0,0,0.32);
+   border-left: 0;
+   border-right: 0;
+
+}
+
+
+.bottom{
+    border-radius: 0 0 2.4rem 2.4rem;
+}
+
+.bottom .container{
+    align-items: center;
+    gap: .8rem;
+}
+
+dl.grid{
+    gap: 1.6rem;
+    min-width: 9.5rem;
+}
+
+dt time{
+   color: white;
+   font-weight: 500;
+   font-size: 1.6rem;
+   line-height: 1.9rem;
+   background: #4E31AA;
+   border-radius: .8rem;
+   padding: .4rem .8rem;
+   display: inline-block;
+   margin-top: .2rem;
+}
+
+.bottom >p{
+    text-align: center;
+    margin-top: 2.4rem;
+    font-size: 16px;
+    line-height: 20px;
+    color: rgba(0,0,0,0.8);
+}
+
+.qrcode.grid{
+    justify-items: center;
+}
+
+footer{
+    font-size: 14px;
+    line-height: 24px;
+    color: white;
+    opacity: 0.64;
+    width: 27rem;
+    text-align: center;
+    margin: 2rem auto;
+}
